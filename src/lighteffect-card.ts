@@ -1,7 +1,7 @@
 import { LitElement, PropertyValues, TemplateResult, css, html } from "lit";
 import { property, customElement, state } from "lit/decorators.js";
 import { LightEffectCardConfig, ExternalLightEffectCardConfig } from "./types";
-import { HomeAssistant, LightEntity, LovelaceCard } from "./juzz-ha-helper";
+import { HomeAssistant, LightEntity, LovelaceCard } from "juzz-ha-helper";
 import * as pjson from "../package.json";
 
 export const stopPropagation = (ev) => ev.stopPropagation();
