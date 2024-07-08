@@ -1,6 +1,3 @@
-import { LitElement, PropertyValues, css, html, nothing } from "lit";
-import { property, customElement, state } from "lit/decorators.js";
-import { LightEffectCardConfig, LightEffectCardConfigStrict } from "./lighteffect-card-config";
 import {
   HomeAssistant,
   LightEntity,
@@ -8,7 +5,9 @@ import {
   LovelaceCardEditor,
   fireEvent,
 } from "juzz-ha-helper";
-import { registerCustomCard } from "../utils/custom-cards";
+import { LitElement, PropertyValues, css, html, nothing } from "lit";
+import { customElement, property, state } from "lit/decorators.js";
+
 import {
   CARD_DEFAULT_HIDE_IF_NO_EFFECTS,
   CARD_DEFAULT_HIDE_IF_OFF,
@@ -16,6 +15,8 @@ import {
   CARD_NAME,
   LIGHT_DOMAINS,
 } from "./const";
+import { LightEffectCardConfig, LightEffectCardConfigStrict } from "./lighteffect-card-config";
+import { registerCustomCard } from "../utils/custom-cards";
 
 registerCustomCard({
   type: CARD_NAME,

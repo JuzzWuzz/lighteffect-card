@@ -1,9 +1,10 @@
 import { HaFormSchema, HomeAssistant, LovelaceCardEditor, fireEvent } from "juzz-ha-helper";
 import { LitElement, html, nothing } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
+import { assert } from "superstruct";
+
 import { CARD_EDITOR_NAME, LIGHT_DOMAINS } from "./const";
 import { LightEffectCardConfig, LightEffectCardConfigStruct } from "./lighteffect-card-config";
-import { assert } from "superstruct";
 
 const SCHEMA: HaFormSchema[] = [
   { name: "entity", required: true, selector: { entity: { filter: { domain: LIGHT_DOMAINS } } } },
