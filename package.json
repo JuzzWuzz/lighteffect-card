@@ -1,6 +1,6 @@
 {
   "name": "lighteffect-card",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A basic card that provided a dropdown populated with the effect list of the supplied light entity.",
   "main": "src/lighteffect-card.ts",
   "type": "module",
